@@ -1,10 +1,10 @@
-pipeline{
-  agent any
-  stages{
-    stage{
-      steps{
-        echo "La compilación del respositorio cterminó correctamente"
-      }
-    }  
-  }
-}
+pipeline { 
+    agent any    
+    stages { 
+        stage('Test') {
+            steps{
+                echo 'La descarga y compilación del repositorio Git se ha completado de forma satisfactoria.'
+            }
+        } 
+    }    
+} 
